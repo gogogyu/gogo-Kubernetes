@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-nginx-env
+spec:
+  containers:
+  - name: container-nginx
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+      protocol: TCP
+    env:
+    - name: MYVAR
+      value: "testvalue"
