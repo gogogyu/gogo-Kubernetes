@@ -5,12 +5,12 @@ metadata:
 spec:
   replicas: 3
   selector:
-    app: webui
+    env: dev
  template:
    metadata:
      name: pod-nginx
      labels:
-       app: webui
+       env: dev
    spec:
      containers:
      - name: container-nginx
