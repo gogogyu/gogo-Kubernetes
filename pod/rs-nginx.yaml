@@ -7,12 +7,12 @@ spec:
   selector:
     matchLabels:
       env: dev
- template:
-   metadata:
-     name: pod-nginx
-     labels:
-       env: dev
-   spec:
-     containers:
-     - name: container-nginx
-       image: nginx:latest
+  template:
+    metadata:
+      name: pod-nginx
+      labels:
+        env: dev
+    spec:
+      containers:
+      - name: container-nginx
+        image: nginx:latest
